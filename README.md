@@ -42,20 +42,20 @@ their own).
 ## Install
 
 ```bash
-npm i -g @fourdoorsmorewhoes/lightsout    # then the command is `lightsout`
-# or run without installing:  npx @fourdoorsmorewhoes/lightsout <url> --fcp
+npm i -g lightsoutt    # then the command is `lightsoutt`
+# or run without installing:  npx lightsoutt <url> --fcp
 ```
 
 ## Usage
 
 ```bash
-lightsout https://example.com               # network floor + document evidence
-lightsout https://example.com --fcp         # + real FCP, paint readiness, classification
-lightsout scan ./my-project                 # analyze your codebase directly (most accurate)
-lightsout --file ./index.html               # measure a local HTML file
-lightsout https://x.com --budget 14336      # override the byte budget
-lightsout https://x.com --rtt 100           # assume a 100 ms RTT for the floor
-lightsout https://x.com --json              # machine-readable, for CI
+lightsoutt https://example.com               # network floor + document evidence
+lightsoutt https://example.com --fcp         # + real FCP, paint readiness, classification
+lightsoutt scan ./my-project                 # analyze your codebase directly (most accurate)
+lightsoutt --file ./index.html               # measure a local HTML file
+lightsoutt https://x.com --budget 14336      # override the byte budget
+lightsoutt https://x.com --rtt 100           # assume a 100 ms RTT for the floor
+lightsoutt https://x.com --json              # machine-readable, for CI
 ```
 
 ### `lightsout scan` — analyze the project, not a black-box URL
@@ -115,7 +115,7 @@ Same tool, a site that does it right:
 ### Interactive explorer (TUI)
 
 ```bash
-npx lightsout-tui        # or: npm run tui
+npx lightsoutt-tui        # or: npm run tui
 ```
 
 A zero-dependency terminal UI: a colour-coded PRR leaderboard from the committed
