@@ -39,16 +39,23 @@ congestion window roughly doubles each trip, so a doc bigger than 14 KB can
 still arrive in 2 trips, and render-blocking resources fetched in parallel add
 their own).
 
+## Install
+
+```bash
+npm i -g @fourdoorsmorewhoes/lightsout    # then the command is `lightsout`
+# or run without installing:  npx @fourdoorsmorewhoes/lightsout <url> --fcp
+```
+
 ## Usage
 
 ```bash
-npx lightsout https://example.com               # network floor + document evidence
-npx lightsout https://example.com --fcp         # + real FCP, paint readiness, classification
-npx lightsout scan ./my-project                 # analyze your codebase directly (most accurate)
-npx lightsout --file ./index.html               # measure a local HTML file
-npx lightsout https://x.com --budget 14336      # override the byte budget
-npx lightsout https://x.com --rtt 100           # assume a 100 ms RTT for the floor
-npx lightsout https://x.com --json              # machine-readable, for CI
+lightsout https://example.com               # network floor + document evidence
+lightsout https://example.com --fcp         # + real FCP, paint readiness, classification
+lightsout scan ./my-project                 # analyze your codebase directly (most accurate)
+lightsout --file ./index.html               # measure a local HTML file
+lightsout https://x.com --budget 14336      # override the byte budget
+lightsout https://x.com --rtt 100           # assume a 100 ms RTT for the floor
+lightsout https://x.com --json              # machine-readable, for CI
 ```
 
 ### `lightsout scan` — analyze the project, not a black-box URL

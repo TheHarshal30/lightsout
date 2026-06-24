@@ -1,5 +1,5 @@
 {
-  "name": "lightsout",
+  "name": "@fourdoorsmorewhoes/lightsout",
   "version": "0.1.0",
   "description": "The network-floor analyzer: computes the earliest first paint the network allows by measuring your gzipped HTML against the ~14 KB TCP slow-start window and the render-blocking resources in <head>. Validated against 77 real sites.",
   "type": "module",
