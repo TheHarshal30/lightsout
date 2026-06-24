@@ -110,7 +110,9 @@ async function main() {
     html = await readFile(opts.file, "utf8");
     baseUrl = null;
   } else {
-    const r = await fetch(opts.target, { redirect: "follow" });
+    // Scheme is optional on the CLI: `lightsout example.com` == `https://example.com`.
+    const target = /^https?:\/\//i.test(opts.target) ? opts.target : "https://" + opts.target;
+    const r = await fetch(target, { redirect: "follow" });
     html = await r.text();
     baseUrl = r.url;
     documentWire = measureResponse(r.headers, html);
