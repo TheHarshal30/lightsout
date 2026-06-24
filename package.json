@@ -16,6 +16,7 @@
     "bin",
     "action",
     "action.yml",
+    "bench/dataset-hq.json",
     "README.md"
   ],
   "scripts": {
