@@ -1,0 +1,49 @@
+{
+  "name": "lightsout",
+  "version": "0.1.0",
+  "description": "The network-floor analyzer: computes the earliest first paint the network allows by measuring your gzipped HTML against the ~14 KB TCP slow-start window and the render-blocking resources in <head>. Validated against 77 real sites.",
+  "type": "module",
+  "bin": {
+    "lightsout": "./bin/lightsout.mjs",
+    "lightsout-tui": "./bin/tui.mjs"
+  },
+  "exports": {
+    ".": "./src/analyze.mjs",
+    "./cdp": "./src/cdp-fcp.mjs"
+  },
+  "files": [
+    "src",
+    "bin",
+    "action",
+    "action.yml",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node test/analyze.test.mjs",
+    "bench": "node bench/run-bench.mjs",
+    "tui": "node bin/tui.mjs"
+  },
+  "keywords": [
+    "performance",
+    "web-performance",
+    "tcp",
+    "slow-start",
+    "14kb",
+    "page-weight",
+    "critical-path",
+    "ci"
+  ],
+  "license": "MIT",
+  "author": "Harshal Rudra",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theharshal30/lightsout.git"
+  },
+  "homepage": "https://github.com/theharshal30/lightsout#readme",
+  "bugs": {
+    "url": "https://github.com/theharshal30/lightsout/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

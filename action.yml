@@ -1,0 +1,45 @@
+name: "lightsout"
+description: "Gate your PRs on the 14 KB first-round-trip budget — fail the build when your HTML document no longer renders in the first network round-trip."
+author: "lightsout"
+branding:
+  icon: "zap"
+  color: "green"
+
+inputs:
+  url:
+    description: "URL to measure (e.g. a preview/staging deploy). Either url or file is required."
+    required: false
+  file:
+    description: "Path to a local HTML file to measure (e.g. dist/index.html). Either url or file is required."
+    required: false
+  budget:
+    description: "Byte budget for the HTML document. Default ~14 KB (the TCP initcwnd)."
+    required: false
+    default: "14336"
+  fail-on-bust:
+    description: "Fail the job when the HTML document busts the budget. Set to 'false' to report only."
+    required: false
+    default: "true"
+
+outputs:
+  fits:
+    description: "'true' if the HTML document fits the first round-trip budget."
+    value: ${{ steps.lightsout.outputs.fits }}
+  document-bytes:
+    description: "The document's on-the-wire size in bytes."
+    value: ${{ steps.lightsout.outputs.document-bytes }}
+  round-trips:
+    description: "Predicted network round-trips to first paint."
+    value: ${{ steps.lightsout.outputs.round-trips }}
+
+runs:
+  using: "composite"
+  steps:
+    - id: lightsout
+      shell: bash
+      env:
+        INPUT_URL: ${{ inputs.url }}
+        INPUT_FILE: ${{ inputs.file }}
+        INPUT_BUDGET: ${{ inputs.budget }}
+        INPUT_FAIL_ON_BUST: ${{ inputs.fail-on-bust }}
+      run: node "$GITHUB_ACTION_PATH/action/run.mjs"

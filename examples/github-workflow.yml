@@ -1,0 +1,24 @@
+# Example: gate every PR on the 14 KB first-round-trip budget.
+# Copy this into your repo as .github/workflows/lightsout.yml
+name: lightsout
+
+on:
+  pull_request:
+
+jobs:
+  budget:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Measure a built HTML file from the repo …
+      - uses: lightsout/action@v1
+        with:
+          file: dist/index.html
+          # budget: 14336        # optional, this is the default
+          # fail-on-bust: true   # optional, this is the default
+
+      # … or measure a live preview deploy instead:
+      # - uses: lightsout/action@v1
+      #   with:
+      #     url: https://deploy-preview-${{ github.event.number }}--your-site.netlify.app

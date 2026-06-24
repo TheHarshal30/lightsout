@@ -1,0 +1,491 @@
+{
+  "generatedAt": "2026-06-24T02:20:35.784Z",
+  "panel": 20,
+  "reps": 3,
+  "concurrency": 1,
+  "cacheDisabled": true,
+  "throttle": "~150ms RTT / 1.6Mbps",
+  "budget": 14336,
+  "sites": [
+    {
+      "url": "https://www.dell.com",
+      "finalUrl": "https://www.dell.com/en-in/lp",
+      "ok": true,
+      "documentBytes": 64011,
+      "fitsBudget": false,
+      "predictedRoundTrips": 4,
+      "networkFloorMs": 600,
+      "fcpReps": [
+        272,
+        172,
+        172
+      ],
+      "fcpMeanMs": 205,
+      "fcpStdMs": 58,
+      "prrReps": [
+        1,
+        1,
+        1
+      ],
+      "prrMean": 1,
+      "prrStd": 0,
+      "error": null
+    },
+    {
+      "url": "https://www.lyft.com",
+      "finalUrl": "https://www.lyft.com/",
+      "ok": true,
+      "documentBytes": 67859,
+      "fitsBudget": false,
+      "predictedRoundTrips": 4,
+      "networkFloorMs": 600,
+      "fcpReps": [
+        248,
+        176,
+        176
+      ],
+      "fcpMeanMs": 200,
+      "fcpStdMs": 42,
+      "prrReps": [
+        1,
+        1,
+        1
+      ],
+      "prrMean": 1,
+      "prrStd": 0,
+      "error": null
+    },
+    {
+      "url": "https://www.netlify.com",
+      "finalUrl": "https://www.netlify.com/",
+      "ok": true,
+      "documentBytes": 110943,
+      "fitsBudget": false,
+      "predictedRoundTrips": 5,
+      "networkFloorMs": 750,
+      "fcpReps": [
+        892,
+        856,
+        820
+      ],
+      "fcpMeanMs": 856,
+      "fcpStdMs": 36,
+      "prrReps": [
+        0.841,
+        0.876,
+        0.915
+      ],
+      "prrMean": 0.877,
+      "prrStd": 0.037,
+      "error": null
+    },
+    {
+      "url": "https://www.figma.com",
+      "finalUrl": "https://www.figma.com/",
+      "ok": true,
+      "documentBytes": 262777,
+      "fitsBudget": false,
+      "predictedRoundTrips": 6,
+      "networkFloorMs": 900,
+      "fcpReps": [
+        804,
+        444,
+        444
+      ],
+      "fcpMeanMs": 564,
+      "fcpStdMs": 208,
+      "prrReps": [
+        1,
+        1,
+        1
+      ],
+      "prrMean": 1,
+      "prrStd": 0,
+      "error": null
+    },
+    {
+      "url": "https://www.cloudflare.com",
+      "finalUrl": "https://www.cloudflare.com/",
+      "ok": true,
+      "documentBytes": 289562,
+      "fitsBudget": false,
+      "predictedRoundTrips": 6,
+      "networkFloorMs": 900,
+      "fcpReps": [
+        1864,
+        1676,
+        1696
+      ],
+      "fcpMeanMs": 1745,
+      "fcpStdMs": 103,
+      "prrReps": [
+        0.483,
+        0.537,
+        0.531
+      ],
+      "prrMean": 0.517,
+      "prrStd": 0.03,
+      "error": null
+    },
+    {
+      "url": "https://www.nytimes.com",
+      "finalUrl": "https://www.nytimes.com/",
+      "ok": true,
+      "documentBytes": 353124,
+      "fitsBudget": false,
+      "predictedRoundTrips": 6,
+      "networkFloorMs": 900,
+      "fcpReps": [
+        2856,
+        3256,
+        3232
+      ],
+      "fcpMeanMs": 3115,
+      "fcpStdMs": 224,
+      "prrReps": [
+        0.315,
+        0.276,
+        0.278
+      ],
+      "prrMean": 0.29,
+      "prrStd": 0.022,
+      "error": null
+    },
+    {
+      "url": "https://www.linkedin.com",
+      "finalUrl": "https://www.linkedin.com/",
+      "ok": true,
+      "documentBytes": 16084,
+      "fitsBudget": false,
+      "predictedRoundTrips": 3,
+      "networkFloorMs": 450,
+      "fcpReps": [
+        1376,
+        1220,
+        1152
+      ],
+      "fcpMeanMs": 1249,
+      "fcpStdMs": 115,
+      "prrReps": [
+        0.327,
+        0.369,
+        0.391
+      ],
+      "prrMean": 0.362,
+      "prrStd": 0.033,
+      "error": null
+    },
+    {
+      "url": "https://github.com",
+      "finalUrl": "https://github.com/",
+      "ok": true,
+      "documentBytes": 123039,
+      "fitsBudget": false,
+      "predictedRoundTrips": 6,
+      "networkFloorMs": 900,
+      "fcpReps": [
+        9076,
+        9076,
+        9080
+      ],
+      "fcpMeanMs": 9077,
+      "fcpStdMs": 2,
+      "prrReps": [
+        0.099,
+        0.099,
+        0.099
+      ],
+      "prrMean": 0.099,
+      "prrStd": 0,
+      "error": null
+    },
+    {
+      "url": "https://www.atlassian.com",
+      "finalUrl": "https://www.atlassian.com/",
+      "ok": true,
+      "documentBytes": 320601,
+      "fitsBudget": false,
+      "predictedRoundTrips": 6,
+      "networkFloorMs": 900,
+      "fcpReps": [
+        2596,
+        2356,
+        1676
+      ],
+      "fcpMeanMs": 2209,
+      "fcpStdMs": 477,
+      "prrReps": [
+        0.347,
+        0.382,
+        0.537
+      ],
+      "prrMean": 0.422,
+      "prrStd": 0.101,
+      "error": null
+    },
+    {
+      "url": "https://www.youtube.com",
+      "finalUrl": "https://www.youtube.com/",
+      "ok": true,
+      "documentBytes": 219706,
+      "fitsBudget": false,
+      "predictedRoundTrips": 6,
+      "networkFloorMs": 900,
+      "fcpReps": [
+        4204,
+        3988,
+        3932
+      ],
+      "fcpMeanMs": 4041,
+      "fcpStdMs": 144,
+      "prrReps": [
+        0.214,
+        0.226,
+        0.229
+      ],
+      "prrMean": 0.223,
+      "prrStd": 0.008,
+      "error": null
+    },
+    {
+      "url": "https://www.wordpress.com",
+      "finalUrl": "https://wordpress.com/hi/",
+      "ok": true,
+      "documentBytes": 104281,
+      "fitsBudget": false,
+      "predictedRoundTrips": 5,
+      "networkFloorMs": 750,
+      "fcpReps": [
+        1904,
+        1552,
+        1380
+      ],
+      "fcpMeanMs": 1612,
+      "fcpStdMs": 267,
+      "prrReps": [
+        0.394,
+        0.483,
+        0.543
+      ],
+      "prrMean": 0.473,
+      "prrStd": 0.075,
+      "error": null
+    },
+    {
+      "url": "https://www.apple.com",
+      "finalUrl": "https://www.apple.com/",
+      "ok": true,
+      "documentBytes": 42364,
+      "fitsBudget": false,
+      "predictedRoundTrips": 4,
+      "networkFloorMs": 600,
+      "fcpReps": [
+        1896,
+        1240,
+        1348
+      ],
+      "fcpMeanMs": 1495,
+      "fcpStdMs": 352,
+      "prrReps": [
+        0.316,
+        0.484,
+        0.445
+      ],
+      "prrMean": 0.415,
+      "prrStd": 0.088,
+      "error": null
+    },
+    {
+      "url": "https://x.com",
+      "finalUrl": "https://x.com/",
+      "ok": true,
+      "documentBytes": 12793,
+      "fitsBudget": true,
+      "predictedRoundTrips": 3,
+      "networkFloorMs": 450,
+      "fcpReps": [
+        6300,
+        5896,
+        5912
+      ],
+      "fcpMeanMs": 6036,
+      "fcpStdMs": 229,
+      "prrReps": [
+        0.071,
+        0.076,
+        0.076
+      ],
+      "prrMean": 0.074,
+      "prrStd": 0.003,
+      "error": null
+    },
+    {
+      "url": "https://www.forbes.com",
+      "finalUrl": "https://www.forbes.com/",
+      "ok": true,
+      "documentBytes": 120746,
+      "fitsBudget": false,
+      "predictedRoundTrips": 5,
+      "networkFloorMs": 750,
+      "fcpReps": [
+        1400,
+        976,
+        928
+      ],
+      "fcpMeanMs": 1101,
+      "fcpStdMs": 260,
+      "prrReps": [
+        0.536,
+        0.768,
+        0.808
+      ],
+      "prrMean": 0.704,
+      "prrStd": 0.147,
+      "error": null
+    },
+    {
+      "url": "https://www.google.com",
+      "finalUrl": "https://www.google.com/",
+      "ok": true,
+      "documentBytes": 60983,
+      "fitsBudget": false,
+      "predictedRoundTrips": 4,
+      "networkFloorMs": 600,
+      "fcpReps": [
+        760,
+        752,
+        724
+      ],
+      "fcpMeanMs": 745,
+      "fcpStdMs": 19,
+      "prrReps": [
+        0.789,
+        0.798,
+        0.829
+      ],
+      "prrMean": 0.805,
+      "prrStd": 0.021,
+      "error": null
+    },
+    {
+      "url": "https://www.microsoft.com",
+      "finalUrl": "https://www.microsoft.com/en-in",
+      "ok": true,
+      "documentBytes": 23885,
+      "fitsBudget": false,
+      "predictedRoundTrips": 4,
+      "networkFloorMs": 600,
+      "fcpReps": [
+        6472,
+        6092,
+        6092
+      ],
+      "fcpMeanMs": 6219,
+      "fcpStdMs": 219,
+      "prrReps": [
+        0.093,
+        0.098,
+        0.098
+      ],
+      "prrMean": 0.096,
+      "prrStd": 0.003,
+      "error": null
+    },
+    {
+      "url": "https://www.bestbuy.com",
+      "finalUrl": "https://www.bestbuy.com/",
+      "ok": true,
+      "documentBytes": 1671,
+      "fitsBudget": true,
+      "predictedRoundTrips": 2,
+      "networkFloorMs": 300,
+      "fcpReps": [
+        8600,
+        9308,
+        10288
+      ],
+      "fcpMeanMs": 9399,
+      "fcpStdMs": 848,
+      "prrReps": [
+        0.035,
+        0.032,
+        0.029
+      ],
+      "prrMean": 0.032,
+      "prrStd": 0.003,
+      "error": null
+    },
+    {
+      "url": "https://www.spotify.com",
+      "finalUrl": "https://open.spotify.com/",
+      "ok": true,
+      "documentBytes": 2179,
+      "fitsBudget": true,
+      "predictedRoundTrips": 3,
+      "networkFloorMs": 450,
+      "fcpReps": [
+        13536,
+        13168,
+        13172
+      ],
+      "fcpMeanMs": 13292,
+      "fcpStdMs": 211,
+      "prrReps": [
+        0.033,
+        0.034,
+        0.034
+      ],
+      "prrMean": 0.034,
+      "prrStd": 0.001,
+      "error": null
+    },
+    {
+      "url": "https://www.wikipedia.org",
+      "finalUrl": "https://www.wikipedia.org/",
+      "ok": true,
+      "documentBytes": 30635,
+      "fitsBudget": false,
+      "predictedRoundTrips": 2,
+      "networkFloorMs": 300,
+      "fcpReps": [
+        644,
+        408,
+        420
+      ],
+      "fcpMeanMs": 491,
+      "fcpStdMs": 133,
+      "prrReps": [
+        0.466,
+        0.735,
+        0.714
+      ],
+      "prrMean": 0.638,
+      "prrStd": 0.15,
+      "error": null
+    },
+    {
+      "url": "https://www.reddit.com",
+      "finalUrl": "https://www.reddit.com/",
+      "ok": true,
+      "documentBytes": 8424,
+      "fitsBudget": true,
+      "predictedRoundTrips": 1,
+      "networkFloorMs": 150,
+      "fcpReps": [
+        1216,
+        1212,
+        1952
+      ],
+      "fcpMeanMs": 1460,
+      "fcpStdMs": 426,
+      "prrReps": [
+        0.123,
+        0.124,
+        0.077
+      ],
+      "prrMean": 0.108,
+      "prrStd": 0.027,
+      "error": null
+    }
+  ]
+}
